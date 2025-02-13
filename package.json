@@ -1,0 +1,82 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.14.2",
+  "scripts": {
+    "build": "vite-ssg build",
+    "dev": "vite --port 3333 --open",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "preview-https": "serve dist",
+    "typecheck": "vue-tsc --noEmit",
+    "up": "taze major -I",
+    "postinstall": "npx simple-git-hooks",
+    "sizecheck": "npx vite-bundle-visualizer"
+  },
+  "dependencies": {
+    "@radix-icons/vue": "^1.0.0",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/vite": "4.0.0-beta.4",
+    "@unhead/vue": "^1.11.13",
+    "@vueuse/core": "^12.0.0",
+    "@vueuse/head": "^2.0.0",
+    "@vueuse/motion": "^2.2.6",
+    "class-variance-authority": "^0.7.1",
+    "gsap": "^3.12.5",
+    "pinia": "^2.2.6",
+    "radix-vue": "^1.9.12",
+    "tailwindcss": "4.0.0-beta.4",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul-vue": "^0.2.0",
+    "vue": "^3.5.13",
+    "vue-demi": "^0.14.10",
+    "vue-i18n": "^10.0.4",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.10.0",
+    "@iconify-json/carbon": "^1.2.4",
+    "@intlify/unplugin-vue-i18n": "^6.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue-macros/volar": "^0.30.6",
+    "clsx": "^2.1.1",
+    "critters": "^0.0.25",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.15.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-format": "^0.1.2",
+    "https-localhost": "^4.7.1",
+    "lint-staged": "^15.2.10",
+    "pnpm": "^9.14.2",
+    "rollup": "^4.27.4",
+    "sass": "^1.83.4",
+    "simple-git-hooks": "^2.11.1",
+    "tailwind-merge": "^2.5.5",
+    "taze": "^0.18.0",
+    "typescript": "~5.6.3",
+    "unplugin-auto-import": "^0.18.5",
+    "unplugin-vue-components": "^0.27.4",
+    "unplugin-vue-macros": "^2.13.4",
+    "unplugin-vue-router": "^0.10.8",
+    "vite": "^6.0.1",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-plugin-inspect": "^0.10.0",
+    "vite-plugin-vue-devtools": "^7.6.4",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vite-plugin-webfont-dl": "^3.10.2",
+    "vite-ssg": "^0.24.1",
+    "vite-ssg-sitemap": "^0.8.1",
+    "vue-tsc": "^2.1.10"
+  },
+  "resolutions": {
+    "vite": "^6.0.1",
+    "vite-plugin-inspect": "^0.10.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

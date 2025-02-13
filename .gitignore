@@ -1,0 +1,17 @@
+node_modules
+
+.vscode
+.idea
+nginx/logs
+.env
+postgres
+build
+env
+dist
+source
+
+
+
+
+
+

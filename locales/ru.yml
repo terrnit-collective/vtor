@@ -1,0 +1,17 @@
+hero:
+  title: Vtor
+  description: Opinionated Vite + Vue + GSAP Starter Template
+  cta: Get started
+  buttons:
+    primary: Основной
+    outline: Оутлайн
+    ghost: Призрачный
+    destructive: Опасный
+themeSwitcher:
+  themes:
+    light: Светлая
+    dark: Темная
+languageSwitcher:
+  locales:
+    en: Английский
+    ru: Русский
