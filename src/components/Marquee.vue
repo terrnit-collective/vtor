@@ -1,12 +1,4 @@
 <script lang="ts" setup>
-import {
-  computed,
-  onBeforeUnmount,
-  onMounted,
-  ref,
-  watch,
-} from 'vue'
-
 export interface MarqueeProps {
   vertical?: boolean
   direction: 'normal' | 'reverse'

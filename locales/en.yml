@@ -4,9 +4,13 @@ hero:
   cta: Get started
   buttons:
     primary: Primary
+    secondary: Secondary
     outline: Outline
+    link: Link
     ghost: Ghost
     destructive: Destructive
+  technologies:
+    title: Built with modern technologies
 themeSwitcher:
   themes:
     light: Light

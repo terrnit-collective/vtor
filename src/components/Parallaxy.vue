@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { computed, onMounted, onUnmounted, reactive, ref } from 'vue'
-
 interface ParallaxyProps {
   axis: string
   speed: number

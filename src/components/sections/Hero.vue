@@ -38,10 +38,10 @@ onMounted(() => {
       <h1 class="text-primary text-2xl font-medium">
         {{ $t("hero.title") }}
       </h1>
-      <span class="text-secondary">{{ $t("hero.description") }}</span>
+      <span class="text-foreground/40">{{ $t("hero.description") }}</span>
       <div class="flex gap-x-4 mt-2">
         <Button
-          class="text-brand-foreground bg-foreground"
+          class="text-brand-foreground bg-brand hover:bg-brand/80"
           size="lg"
           as="a"
           href="https://github.com/terrnit-collective/vtor"
@@ -52,7 +52,7 @@ onMounted(() => {
         <LanguageSwitcher />
         <ThemeSwitcher />
       </div>
-      <div class="flex gap-x-4 mt-12">
+      <div class="grid grid-cols-3 gap-4 mt-12">
         <Button
           v-if="!isLoading"
           v-motion-fade="{
@@ -72,6 +72,27 @@ onMounted(() => {
           class="w-[166px]"
         >
           {{ $t("hero.buttons.primary") }}
+        </Button>
+        <Button
+          v-if="!isLoading"
+          v-motion-fade="{
+            stagger: 150,
+            initial: {
+              opacity: 0,
+              translateX: -20,
+            },
+            enter: {
+              opacity: 1,
+              translateX: 0,
+              transition: {
+                delay: 100,
+              },
+            },
+          }"
+          variant="secondary"
+          class="w-[166px]"
+        >
+          {{ $t("hero.buttons.secondary") }}
         </Button>
         <Button
           v-if="!isLoading"
@@ -110,6 +131,27 @@ onMounted(() => {
               },
             },
           }"
+          variant="destructive"
+          class="w-[166px]"
+        >
+          {{ $t(`hero.buttons.destructive`) }}
+        </Button>
+        <Button
+          v-if="!isLoading"
+          v-motion-fade="{
+            stagger: 150,
+            initial: {
+              opacity: 0,
+              translateX: -20,
+            },
+            enter: {
+              opacity: 1,
+              translateX: 0,
+              transition: {
+                delay: 300,
+              },
+            },
+          }"
           variant="ghost"
           class="w-[166px]"
         >
@@ -131,12 +173,14 @@ onMounted(() => {
               },
             },
           }"
-          variant="destructive"
+          variant="link"
           class="w-[166px]"
         >
-          {{ $t(`hero.buttons.destructive`) }}
+          {{ $t(`hero.buttons.link`) }}
         </Button>
       </div>
+
+      <TechStack />
     </div>
   </div>
 

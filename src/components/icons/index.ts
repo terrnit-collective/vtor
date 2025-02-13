@@ -1,3 +1,8 @@
 export { default as ArrowLeftIcon } from './ArrowLeft.vue'
 export { default as ArrowRightIcon } from './ArrowRight.vue'
 export { default as CloseIcon } from './CloseIcon.vue'
+export { default as GsapIcon } from './GsapIcon.vue'
+export { default as ShadcnUiIcon } from './ShadcnUiIcon.vue'
+export { default as TailwindIcon } from './TailwindIcon.vue'
+export { default as TypescriptIcon } from './TypescriptIcon.vue'
+export { default as VueIcon } from './VueIcon.vue'
